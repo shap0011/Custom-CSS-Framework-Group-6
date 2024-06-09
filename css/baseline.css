@@ -144,8 +144,27 @@ h6 {
   font-size: 2.5rem;
 }
 
+/* Paragraph styles */
 p {
   color: #36454F;
+}
+
+/* Button styles */
+.btn {
+  padding: 0.4rem 0.8rem;
+  margin: 0.25rem 0.125rem;
+}
+
+.btn-primary {
+  background-color: #0096FF;
+}
+
+/* _layout.scss*/
+/* Container stiles */
+.container {
+  max-width: 1320px;
+  margin: auto;
+  line-height: 2;
 }
 
 /*# sourceMappingURL=baseline.css.map */

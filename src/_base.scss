@@ -33,6 +33,19 @@ h6 {
     font-size: typography.$font-sizes-h6;
 }
 
+/* Paragraph styles */
 p {
     color: variables.$black-charcoal;
 }
+
+/* Button styles */
+
+.btn {
+    padding: 0.4rem 0.8rem;
+    margin: 0.25rem 0.125rem;
+}
+
+.btn-primary {
+    background-color: variables.$primary;
+}
+
