@@ -121,27 +121,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 5rem;
-}
-
-h2 {
-  font-size: 4.5rem;
-}
-
-h3 {
   font-size: 4rem;
 }
 
-h4 {
+h2 {
   font-size: 3.5rem;
 }
 
-h5 {
+h3 {
   font-size: 3rem;
 }
 
-h6 {
+h4 {
   font-size: 2.5rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
 }
 
 /* Paragraph styles */
@@ -172,7 +172,7 @@ p {
   background-color: #1F51FF;
   color: #FFFFFF;
 }
-.btn-primary:hover {
+.btn-primary:hover:not(:disabled) {
   background-color: #0818A8;
 }
 
@@ -180,7 +180,7 @@ p {
   background-color: #818589;
   color: #FFFFFF;
 }
-.btn-secondary:hover {
+.btn-secondary:hover:not(:disabled) {
   background-color: #36454F;
 }
 
@@ -188,7 +188,7 @@ p {
   background-color: #228B22;
   color: #FFFFFF;
 }
-.btn-success:hover {
+.btn-success:hover:not(:disabled) {
   background-color: #355E3B;
 }
 
@@ -196,7 +196,7 @@ p {
   background-color: #D70040;
   color: #FFFFFF;
 }
-.btn-danger:hover {
+.btn-danger:hover:not(:disabled) {
   background-color: #800000;
 }
 
@@ -204,7 +204,7 @@ p {
   background-color: #FFAA33;
   color: #FFFFFF;
 }
-.btn-warning:hover {
+.btn-warning:hover:not(:disabled) {
   background-color: #8B8000;
 }
 
@@ -212,8 +212,21 @@ p {
   background-color: #40B5AD;
   color: #FFFFFF;
 }
-.btn-info:hover {
+.btn-info:hover:not(:disabled) {
   background-color: #008080;
+}
+
+/* Link styles */
+a {
+  color: #1F51FF;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  text-decoration: underline;
+  margin: 0.25rem;
+}
+a:hover:not(:disabled) {
+  color: #FF10F0;
 }
 
 /* _layout.scss*/
