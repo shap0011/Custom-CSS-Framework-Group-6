@@ -33,6 +33,46 @@ h6 {
     font-size: typography.$font-sizes-h6;
 }
 
+/* Paragraph styles */
 p {
     color: variables.$black-charcoal;
 }
+
+/* Button styles */
+
+.btn {
+    padding: 0.4rem 0.8rem;
+    margin: 0.25rem;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: variables.$primary;
+    color: variables.$white;
+}
+
+.btn-secondary {
+    background-color: variables.$secondary;
+    color: variables.$white;
+}
+
+.btn-success {
+    background-color: variables.$success;
+    color: variables.$white;
+}
+
+.btn-danger {
+    background-color: variables.$danger;
+    color: variables.$white;
+}
+
+.btn-warning {
+    background-color: variables.$warning;
+    color: variables.$white;
+}
+
+.btn-info {
+    background-color: variables.$info;
+    color: variables.$white;
+}
+

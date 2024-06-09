@@ -144,8 +144,54 @@ h6 {
   font-size: 2.5rem;
 }
 
+/* Paragraph styles */
 p {
   color: #36454F;
+}
+
+/* Button styles */
+.btn {
+  padding: 0.4rem 0.8rem;
+  margin: 0.25rem;
+  border-radius: 5px;
+}
+
+.btn-primary {
+  background-color: #1F51FF;
+  color: #FFFFFF;
+}
+
+.btn-secondary {
+  background-color: #818589;
+  color: #FFFFFF;
+}
+
+.btn-success {
+  background-color: #228B22;
+  color: #FFFFFF;
+}
+
+.btn-danger {
+  background-color: #D70040;
+  color: #FFFFFF;
+}
+
+.btn-warning {
+  background-color: #FFAA33;
+  color: #FFFFFF;
+}
+
+.btn-info {
+  background-color: #40B5AD;
+  color: #FFFFFF;
+}
+
+/* _layout.scss*/
+/* Container stiles */
+.container {
+  max-width: 1320px;
+  margin: auto;
+  line-height: 2;
 }
 
 /*# sourceMappingURL=baseline.css.map */

@@ -1,0 +1,10 @@
+/* _layout.scss*/
+
+@use '_variables';
+
+/* Container stiles */ 
+.container {
+    max-width: variables.$container-max-width-xxl;
+    margin: variables.$margin-auto;
+    line-height: variables.$line-height-2;
+}
