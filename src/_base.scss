@@ -1,0 +1,38 @@
+/* _base.scss */
+
+@use '_variables';
+@use '_typography';
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: typography.$font-weight-heading;
+    color: variables.$blue-iris;
+}
+
+h1 {
+   font-size: typography.$font-sizes-h1;
+}
+
+h2 {
+    font-size: typography.$font-sizes-h2;
+}
+
+h3 {
+    font-size: typography.$font-sizes-h3;
+}
+
+h4 {
+    font-size: typography.$font-sizes-h4;
+}
+
+h5 {
+    font-size: typography.$font-sizes-h5;
+}
+
+h6 {
+    font-size: typography.$font-sizes-h6;
+}
+
+p {
+    color: variables.$black-charcoal;
+}
