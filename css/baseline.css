@@ -1,93 +1,116 @@
-/* _reset.scss */
-/* Box sizing reset */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+/***
+    The new CSS reset - version 1.11.2 (last updated 15.11.2023)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+    - The "html" element is excluded, otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
+ */
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* Remove default margin and padding */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+/* Fix mobile Safari increase font-size on landscape mode */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+/* Reapply the pointer cursor for anchor tags */
+a, button {
+  cursor: revert;
 }
 
-/* Reset list styles */
-ol, ul {
+/* Remove list styles (bullets/numbers) */
+ol, ul, menu, summary {
   list-style: none;
 }
 
-/* Reset quotes */
-blockquote, q {
-  quotes: none;
+/* For images to not be able to exceed their container */
+img {
+  max-inline-size: 100%;
+  max-block-size: 100%;
 }
 
-blockquote::before, blockquote::after,
-q::before, q::after {
-  content: "";
-  content: none;
-}
-
-/* Reset table styles */
+/* removes spacing between cells in tables */
 table {
   border-collapse: collapse;
-  border-spacing: 0;
 }
 
-/* Set default body styles */
-body {
-  line-height: 1;
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input, textarea {
+  -webkit-user-select: auto;
 }
 
-/* Reset form elements */
-button, input, select, textarea {
-  font: inherit;
-  margin: 0;
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
 }
 
-/* Remove link underlines and set default link color */
-a {
-  text-decoration: none;
-  color: inherit;
+/* minimum style to allow to style meter element */
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
 }
 
-/* Ensure media elements display properly */
-img, svg, video, canvas, audio, iframe, embed, object {
-  display: block;
-  max-width: 100%;
+/* preformatted text - use only for this feature */
+:where(pre) {
+  all: revert;
+  box-sizing: border-box;
 }
 
-/* Miscellaneous resets */
-address, caption, cite, code, dfn, em, strong, th, var {
-  font-style: normal;
-  font-weight: normal;
+/* reset default text opacity of input placeholder */
+::placeholder {
+  color: unset;
 }
 
-/* Reset line-height for headings */
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
+/* fix the feature of 'hidden' attribute.
+ display:revert; revert to element instead of attribute */
+:where([hidden]) {
+  display: none;
+}
+
+/* revert for bug in Chromium browsers
+ - fix for the content editable attribute will work properly.
+ - webkit-user-select: auto; added for Safari in case of using user-select:none on wrapper element*/
+:where([contenteditable]:not([contenteditable=false])) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+  -webkit-user-select: auto;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable=true]) {
+  -webkit-user-drag: element;
+}
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+  all: revert;
+  box-sizing: border-box;
+}
+
+/* Remove details summary webkit styles */
+::-webkit-details-marker {
+  display: none;
+}
+
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 100%;
 }
 
 /* _base.scss */
@@ -99,6 +122,30 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 5rem;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 4rem;
+}
+
+h4 {
+  font-size: 3.5rem;
+}
+
+h5 {
+  font-size: 3rem;
+}
+
+h6 {
+  font-size: 2.5rem;
+}
+
+p {
+  color: #36454F;
 }
 
 /*# sourceMappingURL=baseline.css.map */

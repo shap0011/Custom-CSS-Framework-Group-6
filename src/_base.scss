@@ -14,21 +14,25 @@ h1 {
 }
 
 h2 {
-
+    font-size: typography.$font-sizes-h2;
 }
 
 h3 {
-
+    font-size: typography.$font-sizes-h3;
 }
 
 h4 {
-
+    font-size: typography.$font-sizes-h4;
 }
 
 h5 {
-
+    font-size: typography.$font-sizes-h5;
 }
 
 h6 {
+    font-size: typography.$font-sizes-h6;
+}
 
+p {
+    color: variables.$black-charcoal;
 }
