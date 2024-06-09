@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 100%;
+}
+
 /***
     The new CSS reset - version 1.11.2 (last updated 15.11.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset
@@ -108,11 +113,6 @@ meter {
   display: none;
 }
 
-* {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 100%;
-}
-
 /* _base.scss */
 /* Heading styles */
 h1, h2, h3, h4, h5, h6 {
@@ -147,6 +147,8 @@ h6 {
 /* Paragraph styles */
 p {
   color: #36454F;
+  margin: 20px 0;
+  font-weight: 400;
 }
 
 /* Button styles */
@@ -154,36 +156,64 @@ p {
   padding: 0.4rem 0.8rem;
   margin: 0.25rem;
   border-radius: 5px;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  line-height: 1.5;
+  text-decoration: none;
+}
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.65;
+  pointer-events: all !important;
 }
 
 .btn-primary {
   background-color: #1F51FF;
   color: #FFFFFF;
 }
+.btn-primary:hover {
+  background-color: #0818A8;
+}
 
 .btn-secondary {
   background-color: #818589;
   color: #FFFFFF;
+}
+.btn-secondary:hover {
+  background-color: #36454F;
 }
 
 .btn-success {
   background-color: #228B22;
   color: #FFFFFF;
 }
+.btn-success:hover {
+  background-color: #355E3B;
+}
 
 .btn-danger {
   background-color: #D70040;
   color: #FFFFFF;
+}
+.btn-danger:hover {
+  background-color: #800000;
 }
 
 .btn-warning {
   background-color: #FFAA33;
   color: #FFFFFF;
 }
+.btn-warning:hover {
+  background-color: #8B8000;
+}
 
 .btn-info {
   background-color: #40B5AD;
   color: #FFFFFF;
+}
+.btn-info:hover {
+  background-color: #008080;
 }
 
 /* _layout.scss*/

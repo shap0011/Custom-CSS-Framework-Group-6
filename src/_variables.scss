@@ -3,11 +3,17 @@ $blue-iris: #5D3FD3;
 $black-charcoal: #36454F;
 $white: #FFFFFF;
 $primary: #1F51FF;
+$primary-hover: #0818A8;
 $secondary: #818589;
+$secondary-hover: #36454F;
 $success: #228B22;
+$success-hover: #355E3B;
 $danger: #D70040;
+$danger-hover: #800000;
 $warning: #FFAA33;
+$warning-hover: #8B8000;
 $info: #40B5AD;
+$info-hover: #008080;
 
 // Margins
 $margin-auto: auto;
@@ -17,3 +23,8 @@ $container-max-width-xxl: 1320px;
 
 // Line height
 $line-height-2: 2;
+
+// Button
+$btn-margin:  0.25rem;
+$btn-padding: 0.4rem 0.8rem;
+$btn-border-radius: 5px;
