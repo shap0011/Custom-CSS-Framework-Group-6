@@ -69,10 +69,11 @@
 
 .btn-info {
     background-color: variables.$info;
-    color: variables.$white;
+    color: variables.$black;
     
     &:hover:not(:disabled) {
         background-color: variables.$info-hover; 
+        color: variables.$white;
     }
 }
 
@@ -126,6 +127,8 @@ ol li, ul li, dl dd {
     margin-bottom: typography.$font-xs;
 }
 
+// Table 
+
 table, th, td {
     border: variables.$tbl-border;
 }
@@ -142,6 +145,61 @@ th {
     font-weight: typography.$font-bold;
 }
 
+// Text Input
+
 input[type=text] {
    border: variables.$txt-border; 
+   width: variables.$txt-width; 
+   padding: variables.$txt-padding; 
 }
+
+// Checkbox
+
+input[type=checkbox] {
+    border: variables.$chk-border; 
+    width: variables.$chk-width; 
+    height: variables.$chk-height; 
+    padding: variables.$chk-padding; 
+    cursor: variables.$chk-cursor;
+}
+
+// Radio Button
+
+input[type=radio] {
+    border: variables.$radio-border; 
+    border-radius: variables.$radio-border-radius;
+    width: variables.$radio-width; 
+    height: variables.$radio-height; 
+    padding: variables.$radio-padding; 
+    cursor: variables.$radio-cursor;
+}
+
+// Textarea Input
+
+input[name=textarea] {
+    border: variables.$txt-area-border; 
+    width: variables.$txt-area-width; 
+    height: variables.$txt-area-height; 
+    padding: variables.$txt-area-padding; 
+    margin: variables.$txt-area-margin;
+}
+
+button[type=submit] {
+    padding: variables.$btn-padding;
+    margin: variables.$btn-margin;
+    border-radius: variables.$btn-border-radius;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: typography.$font-medium;
+    line-height: 1.5;
+    text-decoration: none;
+    background-color: variables.$submit;
+    color: variables.$black;
+    
+    &:hover:not(:disabled) {
+        background-color: variables.$submit-hover; 
+        color: variables.$white;
+    }
+}
+
+

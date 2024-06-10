@@ -10,11 +10,14 @@ $carmine: #D70040;
 $maroon: #800000;
 $yellow-orange: #FFAA33;
 $dark-yellow: #8B8000;
+$electric-blue: #7DF9FF;
 $verdigris: #40B5AD;
+$blue-green: #088F8F;
 $teal: #008080;
 $neon-pink: #FF10F0;
 
 $white: #FFFFFF;
+$black: #000000;
 $gray-100: #f8f9fa;
 $gray-900: #212529;
 
@@ -37,7 +40,7 @@ $danger: $carmine;
 $danger-hover: $maroon;
 $warning: $yellow-orange;
 $warning-hover: $dark-yellow;
-$info: $verdigris;
+$info: $electric-blue;
 $info-hover: $teal;
 $light: $gray-100;
 $dark: $gray-900;
@@ -68,5 +71,31 @@ $tbl-padding: 20px;
 
 // Text Input Style
 $txt-border: 2px solid $verdigris;
-$txt-width: 150px;
-$txt-padding: 15px;
+$txt-width: 250px;
+$txt-padding: 5px;
+
+// Checkbox Style
+$chk-border: 2px solid $verdigris;
+$chk-width: 25px;
+$chk-height: 25px;
+$chk-padding: 5px;
+$chk-cursor: pointer;
+
+// Radio Button Style
+$radio-border: 2px solid $verdigris;
+$radio-width: 25px;
+$radio-height: 25px;
+$radio-border-radius: 50%;
+$radio-padding: 5px;
+$radio-cursor: pointer;
+
+// Textarea Style
+$txt-area-border: 2px solid $verdigris;
+$txt-area-width: 250px;
+$txt-area-height: 50px;
+$txt-area-padding: 5px;
+$txt-area-margin: 10px 0;
+
+// Submit Button
+$submit: $verdigris;
+$submit-hover: $blue-green;

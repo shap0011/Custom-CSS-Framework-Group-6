@@ -19,6 +19,17 @@
     @include margin-top-bottom;
 }
 
+@mixin margin-top-bottom-form {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+// Add margins between forms
+
+.margin-top-bottom-form {
+    @include margin-top-bottom-form;
+}
+
 @mixin list-center {
     display: inline-block;
     text-align: left;
