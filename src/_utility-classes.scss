@@ -24,8 +24,19 @@
     text-align: left;
 }
 
+// Center a list
 .list-center {
     @include list-center;
+}
+
+@mixin center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Center a table
+.center {
+    @include center;
 }
 
 

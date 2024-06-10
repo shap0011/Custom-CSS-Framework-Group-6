@@ -94,7 +94,6 @@ a {
 ol, ul, dl {
     font-size: typography.$font-md;
     font-weight: typography.$font-normal;
-    padding-left: variables.$padding-lg;
     margin-bottom: typography.$font-lg;
 }
 // Unordered Lists
@@ -125,4 +124,24 @@ dd {
 
 ol li, ul li, dl dd {
     margin-bottom: typography.$font-xs;
+}
+
+table, th, td {
+    border: variables.$tbl-border;
+}
+
+table {
+    width: variables.$tbl-width;
+}
+
+th, td {
+    padding: variables.$tbl-padding;
+}
+
+th {
+    font-weight: typography.$font-bold;
+}
+
+input[type=text] {
+   border: variables.$txt-border; 
 }
