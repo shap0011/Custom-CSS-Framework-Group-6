@@ -1,3 +1,4 @@
+/* Used New CSS Reset By Elad Shechter: https://github.com/elad2412/the-new-css-reset */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 /***
     The new CSS reset - version 1.11.2 (last updated 15.11.2023)
@@ -151,9 +152,9 @@ h6 {
 }
 
 p {
-  color: #36454F;
-  margin: 20px 0;
+  font-size: 1rem;
   font-weight: 400;
+  margin-bottom: 1rem;
 }
 
 .btn {
@@ -263,12 +264,75 @@ ol li, ul li, dl dd {
   margin-bottom: 0.8rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.margin-top-bottom {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.list-center {
+  display: inline-block;
+  text-align: left;
+}
+
 /* _layout.scss*/
 /* Container stiles */
 .container {
-  max-width: 1320px;
-  margin: auto;
-  line-height: 2;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
+@media screen and (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .container .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .container .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  .container .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+  .container .flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}
+
+/* _base.scss */
 
 /*# sourceMappingURL=baseline.css.map */

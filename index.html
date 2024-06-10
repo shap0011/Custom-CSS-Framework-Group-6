@@ -8,43 +8,60 @@
 </head>
 <body>
     <div class="container">
-        <h1>This is an H1 Heading</h1>
-        <h2>This is an H2 Heading</h2>
-        <h3>This is an H3 Heading</h3>
-        <h4>This is an H4 Heading</h4>
-        <h5>This is an H5 Heading</h5>
-        <h6>This is an H6 Heading</h6>
+        <div class="text-center">
+            <h1>This is an H1 Heading</h1>
+            <h2>This is an H2 Heading</h2>
+            <h3>This is an H3 Heading</h3>
+            <h4>This is an H4 Heading</h4>
+            <h5>This is an H5 Heading</h5>
+            <h6>This is an H6 Heading</h6>
+        
 
-        <p>This is a sample paragraph. Your CSS styles will be applied here.</p>
+            <p class="margin-top-bottom">This is a sample paragraph. Your CSS styles will be applied here.</p>
+        
+            <div class="margin-top-bottom">
+                <a href="#">This is a link</a>
+                <a class="btn btn-primary" href="#">This is a link button</a>
+            </div>
 
-        <a href="#">This is a link</a>
+        </div>
 
-        <a class="btn btn-primary" href="#">This is a link button</a>
-      
+        <div class="flex-row margin-top-bottom">
+            <div class="text-center">
+                <ul class="list-center">
+                    <li>Unordered List Item 1</li>
+                    <li>Unordered List Item 2</li>
+                    <li>Unordered List Item 3</li>
+                </ul>
+            </div>
 
-        <ul>
-            <li>Unordered List Item 1</li>
-            <li>Unordered List Item 2</li>
-            <li>Unordered List Item 3</li>
-        </ul>
+            <div class="text-center">
+                <ol class="list-center">
+                    <li>Ordered List Item 1</li>
+                    <li>Ordered List Item 2</li>
+                    <li>Ordered List Item 3</li>
+                </ol>
+            </div>
 
-        <ol>
-            <li>Ordered List Item 1</li>
-            <li>Ordered List Item 2</li>
-            <li>Ordered List Item 3</li>
-        </ol>
+            <div class="text-center">
+                <dl class="list-center">
+                    <dt>Description List Item 1</dt>
+                    <dd>- description of Item 1</dd>
+                    <dt>Description List Item 2</dt>
+                    <dd>- description of Item 2</dd>
+                    <dt>Description List Item 3</dt>
+                    <dd>- description of Item 3</dd>
+                </dl>
+            </div>
 
-        <dl>
-            <dt>Description List Item 1</dt>
-            <dd>- description of Item 1</dd>
-            <dt>Description List Item 2</dt>
-            <dd>- description of Item 2</dd>
-            <dt>Description List Item 3</dt>
-            <dd>- description of Item 3</dd>
-          </dl>
+        </div>
 
-        <img src="https://picsum.photos/536/354" alt="alternatetext">
+        <div class="text-center">
+            <img src="https://picsum.photos/536/354" alt="alternatetext">
+        </div>
+        
 
+        <div class="flex-row margin-top-bottom">
         <form action="#">
             <label for="text">Text Input: </label>
             <input type="text" id="text" name="text">
@@ -54,7 +71,9 @@
             <label for="pwd">Password Input: </label>
             <input type="text" id="pwd" name="pwd">
         </form>
+        </div>
 
+        <div class="flex-row margin-top-bottom">
         <form action="#">
             <label for="checkbox">Checkbox: </label>
             <input type="checkbox" id="checkbox" name="checkbox">
@@ -73,8 +92,9 @@
         <form action="#">
             <button type="submit">Submit</button>
         </form>
+        </div>
 
-        <div>
+        <div class="flex-row margin-top-bottom">
             <button type="button" class="btn btn-primary">Primary</button>
             <button type="button" class="btn btn-secondary">Secondary</button>
             <button type="button" class="btn btn-success">Success</button>
@@ -104,9 +124,14 @@
         </table>
 
         <hr>
-        <blockquote>This is a blockquote</blockquote>
-        <abbr title="Abbreviation">Abbr</abbr>
-        <code>This is inline code</code>
+        
+            <blockquote class="text-center margin-top-bottom">This is a blockquote</blockquote>        
+            <div class="text-center margin-top-bottom">
+                <abbr title="Abbreviation">Abbr</abbr>
+            </div>
+            <div class="text-center margin-top-bottom">
+                <code>This is inline code</code>
+            </div>
     </div>
 </body>
 </html>

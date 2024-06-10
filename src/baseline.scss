@@ -1,8 +1,11 @@
+/* Used New CSS Reset By Elad Shechter: https://github.com/elad2412/the-new-css-reset */ 
+
 @use '_reset';
 @use '_font-family';
 @use '_variables';
 @use '_base';
+@use '_utility-classes';
 @use '_layout';
 @use '_typography';
-@use '_utility-classes';
+
 

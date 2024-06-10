@@ -3,13 +3,6 @@
 @use '_variables';
 @use '_typography';
 
-// Paragraph styles
-p {
-    color: variables.$charcoal;
-    margin: 20px 0;
-    font-weight: typography.$font-normal;
-}
-
 // Button styles
 
 .btn {

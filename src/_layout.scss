@@ -1,11 +1,77 @@
 /* _layout.scss*/
 
-@use '_variables';
-
-
 /* Container stiles */ 
 .container {
-    max-width: variables.$container-max-width-xxl;
-    margin: variables.$margin-auto;
-    line-height: variables.$line-height-2;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+@media screen and (min-width: 576px) {
+    max-width: 540px;
+}
+
+@media screen and (min-width: 768px) {
+    max-width: 720px;
+    @mixin flex-row {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-evenly;  
+    }
+    
+    // Place in row
+    
+    .flex-row {
+        @include flex-row;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    max-width: 960px;
+    @mixin flex-row {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-evenly;  
+    }
+    
+    // Place in row
+    
+    .flex-row {
+        @include flex-row;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    max-width: 1140px;
+    @mixin flex-row {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-evenly;  
+    }
+    
+    // Place in row
+    
+    .flex-row {
+        @include flex-row;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    max-width: 1320px;
+    
+    @mixin flex-row {
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-evenly;  
+    }
+    
+    // Place in row
+    
+    .flex-row {
+        @include flex-row;
+    }
+}
+
 }
