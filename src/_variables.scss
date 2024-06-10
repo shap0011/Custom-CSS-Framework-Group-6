@@ -46,6 +46,7 @@ $light: $gray-100;
 $dark: $gray-900;
 
 // Padding
+$padding-left: 15px;
 $padding-sm: 30px;
 $padding-md: 45px;
 $padding-lg: 60px;
@@ -65,9 +66,26 @@ $capitalize: capitalize;
 $none: none;
 
 // Table Style
-$tbl-border: 1px solid;
+$tbl-border: 2px solid $verdigris;
 $tbl-width: 80%;
 $tbl-padding: 20px;
+
+// Cursor Style
+$cursor-pointer: pointer;
+$cursor-not-allowed: not-allowed;
+
+// Display
+$display-inline-block: inline-block;
+
+// Text Decoration 
+$text-decoration-none: none;
+$text-decoration-underline: underline;
+
+// Pointer Events
+$pointer-events-all: all;
+
+// Width
+$width-fit-content: fit-content;
 
 // Text Input Style
 $txt-border: 2px solid $verdigris;
@@ -79,7 +97,6 @@ $chk-border: 2px solid $verdigris;
 $chk-width: 25px;
 $chk-height: 25px;
 $chk-padding: 5px;
-$chk-cursor: pointer;
 
 // Radio Button Style
 $radio-border: 2px solid $verdigris;
@@ -87,7 +104,6 @@ $radio-width: 25px;
 $radio-height: 25px;
 $radio-border-radius: 50%;
 $radio-padding: 5px;
-$radio-cursor: pointer;
 
 // Textarea Style
 $txt-area-border: 2px solid $verdigris;
@@ -96,6 +112,25 @@ $txt-area-height: 50px;
 $txt-area-padding: 5px;
 $txt-area-margin: 10px 0;
 
+// Input Hover
+$input-hover: $neon-pink;
+
 // Submit Button
 $submit: $verdigris;
 $submit-hover: $blue-green;
+
+// Blockquote Style
+$blockquote-border-left: 3px solid $verdigris;
+$blockquote-hover: $neon-pink;
+
+// Abbreviation
+$abbr-border-bottom: 2px dotted $verdigris;
+$abbr-hover: $neon-pink;
+
+// Inline Code
+$code-font-family: monospace;
+$code-color: $verdigris;
+$code-hover: $neon-pink;
+
+// Image
+$image-border: 5px solid $verdigris;

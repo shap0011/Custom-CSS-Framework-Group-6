@@ -9,16 +9,16 @@
     padding: variables.$btn-padding;
     margin: variables.$btn-margin;
     border-radius: variables.$btn-border-radius;
-    cursor: pointer;
-    display: inline-block;
+    cursor: variables.$cursor-pointer;
+    display: variables.$display-inline-block;
     font-weight: typography.$font-medium;
     line-height: 1.5;
-    text-decoration: none;
+    text-decoration: variables.$text-decoration-none;
 
     &:disabled {
-        cursor: not-allowed;
+        cursor: variables.$cursor-not-allowed;
         opacity: 0.65;
-        pointer-events: all !important;
+        pointer-events: variables.$pointer-events-all !important;
     }
 }
 
@@ -80,10 +80,10 @@
 // Link styles
 a {
     color: variables.$primary;
-    cursor: pointer;
-    display: inline-block;
+    cursor: variables.$cursor-pointer;
+    display: variables.$display-inline-block;
     font-weight: typography.$font-normal;
-    text-decoration: underline;
+    text-decoration: variables.$text-decoration-underline;
     margin: variables.$btn-margin;
         
     &:hover:not(:disabled) {
@@ -151,6 +151,10 @@ input[type=text] {
    border: variables.$txt-border; 
    width: variables.$txt-width; 
    padding: variables.$txt-padding; 
+
+   &:hover {
+    border-color: variables.$input-hover; 
+    }
 }
 
 // Checkbox
@@ -160,7 +164,11 @@ input[type=checkbox] {
     width: variables.$chk-width; 
     height: variables.$chk-height; 
     padding: variables.$chk-padding; 
-    cursor: variables.$chk-cursor;
+    cursor: variables.$cursor-pointer;
+
+    &:hover {
+        border-color: variables.$input-hover; 
+    }
 }
 
 // Radio Button
@@ -171,7 +179,11 @@ input[type=radio] {
     width: variables.$radio-width; 
     height: variables.$radio-height; 
     padding: variables.$radio-padding; 
-    cursor: variables.$radio-cursor;
+    cursor: variables.$cursor-pointer;
+
+    &:hover {
+        border-color: variables.$input-hover; 
+    }
 }
 
 // Textarea Input
@@ -182,17 +194,23 @@ input[name=textarea] {
     height: variables.$txt-area-height; 
     padding: variables.$txt-area-padding; 
     margin: variables.$txt-area-margin;
+
+    &:hover {
+        border-color: variables.$input-hover; 
+    }
 }
+
+// Button Submit
 
 button[type=submit] {
     padding: variables.$btn-padding;
     margin: variables.$btn-margin;
     border-radius: variables.$btn-border-radius;
-    cursor: pointer;
-    display: inline-block;
+    cursor: variables.$cursor-pointer;
+    display: variables.$display-inline-block;
     font-weight: typography.$font-medium;
     line-height: 1.5;
-    text-decoration: none;
+    text-decoration: variables.$text-decoration-none;
     background-color: variables.$submit;
     color: variables.$black;
     
@@ -201,5 +219,43 @@ button[type=submit] {
         color: variables.$white;
     }
 }
+
+// Blockquote
+
+blockquote {
+    padding-left: variables.$padding-left;
+    border-left: variables.$blockquote-border-left;
+    width: variables.$width-fit-content;
+
+    &:hover {
+        border-color: variables.$blockquote-hover; 
+    }
+  }
+
+// Abbreviation
+
+abbr[title] {
+    border-bottom: variables.$abbr-border-bottom;
+  
+    &:hover {
+        border-color: variables.$abbr-hover; 
+    }
+}
+
+// Inline Code
+
+code {
+    font-family: variables.$code-font-family;
+    color: variables.$code-color;
+
+    &:hover {
+        color: variables.$code-hover; 
+    }
+}
+
+img {
+    border: variables.$image-border;
+}
+
 
 
