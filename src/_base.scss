@@ -101,8 +101,8 @@ a {
 ol, ul, dl {
     font-size: typography.$font-md;
     font-weight: typography.$font-normal;
-    padding-left: variables.$padding-sm;
-    padding-top: variables.$padding-sm;
+    padding-left: variables.$padding-lg;
+    margin-bottom: typography.$font-lg;
 }
 // Unordered Lists
 
@@ -128,4 +128,8 @@ dt {
 
 dd {
     text-transform: variables.$lowercase;
+}
+
+ol li, ul li, dl dd {
+    margin-bottom: typography.$font-xs;
 }

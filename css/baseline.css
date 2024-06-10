@@ -235,8 +235,8 @@ a:hover:not(:disabled) {
 ol, ul, dl {
   font-size: 1rem;
   font-weight: 400;
-  padding-left: 30px;
-  padding-top: 30px;
+  padding-left: 60px;
+  margin-bottom: 1.2rem;
 }
 
 ul {
@@ -257,6 +257,10 @@ dt {
 
 dd {
   text-transform: lowercase;
+}
+
+ol li, ul li, dl dd {
+  margin-bottom: 0.8rem;
 }
 
 /* _layout.scss*/
