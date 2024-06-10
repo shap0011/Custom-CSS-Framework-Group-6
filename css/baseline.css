@@ -114,7 +114,6 @@ meter {
 }
 
 /* _base.scss */
-/* Heading styles */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   color: #5D3FD3;
@@ -144,14 +143,12 @@ h6 {
   font-size: 1.5rem;
 }
 
-/* Paragraph styles */
 p {
   color: #36454F;
   margin: 20px 0;
   font-weight: 400;
 }
 
-/* Button styles */
 .btn {
   padding: 0.4rem 0.8rem;
   margin: 0.25rem;
@@ -216,7 +213,6 @@ p {
   background-color: #008080;
 }
 
-/* Link styles */
 a {
   color: #1F51FF;
   cursor: pointer;
@@ -227,6 +223,33 @@ a {
 }
 a:hover:not(:disabled) {
   color: #FF10F0;
+}
+
+ol, ul, dl {
+  font-size: 1rem;
+  font-weight: 400;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+ol {
+  list-style-type: upper-alpha;
+}
+
+dl {
+  padding-bottom: 30px;
+}
+
+dt {
+  text-transform: uppercase;
+}
+
+dd {
+  text-transform: lowercase;
 }
 
 /* _layout.scss*/

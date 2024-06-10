@@ -1,6 +1,5 @@
 // Colors
 $iris: #5D3FD3;
-$white: #FFFFFF;
 $neon-blue: #1F51FF;
 $zaffre: #0818A8;
 $gunmetal-gray: #818589;
@@ -14,6 +13,10 @@ $dark-yellow: #8B8000;
 $verdigris: #40B5AD;
 $teal: #008080;
 $neon-pink: #FF10F0;
+
+$white: #FFFFFF;
+$gray-100: #f8f9fa;
+$gray-900: #212529;
 
 // Margins
 $margin-auto: auto;
@@ -45,3 +48,24 @@ $warning: $yellow-orange;
 $warning-hover: $dark-yellow;
 $info: $verdigris;
 $info-hover: $teal;
+$light: $gray-100;
+$dark: $gray-900;
+
+// Padding
+$padding-sm: 30px;
+$padding-md: 45px;
+$padding-lg: 60px;
+
+// List-Style Types
+$list-disc: disc;
+$list-circle: circle;
+$list-square: square;
+$list-decimal: decimal;
+$list-alpha-upper: upper-alpha;
+$list-lower-roman: lower-roman;
+
+// Text Style Types
+$uppercase: uppercase;
+$lowercase: lowercase;
+$capitalize: capitalize;
+$none: none;
