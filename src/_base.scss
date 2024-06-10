@@ -1,46 +1,46 @@
 /* _base.scss */
-
+@use 'sass:color';
 @use '_variables';
 @use '_typography';
 
-/* Heading styles */
+// Heading styles
 h1, h2, h3, h4, h5, h6 {
     font-weight: typography.$font-bold;
     color: variables.$iris;
 }
 
 h1 {
-   font-size: typography.$font-sizes-h1;
+   font-size: typography.$font-h1;
 }
 
 h2 {
-    font-size: typography.$font-sizes-h2;
+    font-size: typography.$font-h2;
 }
 
 h3 {
-    font-size: typography.$font-sizes-h3;
+    font-size: typography.$font-h3;
 }
 
 h4 {
-    font-size: typography.$font-sizes-h4;
+    font-size: typography.$font-h4;
 }
 
 h5 {
-    font-size: typography.$font-sizes-h5;
+    font-size: typography.$font-h5;
 }
 
 h6 {
-    font-size: typography.$font-sizes-h6;
+    font-size: typography.$font-h6;
 }
 
-/* Paragraph styles */
+// Paragraph styles
 p {
     color: variables.$charcoal;
     margin: 20px 0;
     font-weight: typography.$font-normal;
 }
 
-/* Button styles */
+// Button styles
 
 .btn {
     padding: variables.$btn-padding;
@@ -113,7 +113,7 @@ p {
     }
 }
 
-/* Link styles */
+// Link styles
 a {
     color: variables.$primary;
     cursor: pointer;
@@ -127,3 +127,36 @@ a {
     }
 }
 
+// List styles
+
+ol, ul, dl {
+    font-size: typography.$font-md;
+    font-weight: typography.$font-normal;
+    padding-left: variables.$padding-sm;
+    padding-top: variables.$padding-sm;
+}
+// Unordered Lists
+
+ul {
+    list-style-type: variables.$list-circle;
+}
+
+// Ordered Lists
+
+ol {
+    list-style-type: variables.$list-alpha-upper;
+}
+
+// Description Lists
+
+dl {
+    padding-bottom: variables.$padding-sm;
+}
+
+dt {
+    text-transform: variables.$uppercase;
+}
+
+dd {
+    text-transform: variables.$lowercase;
+}
