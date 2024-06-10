@@ -6,7 +6,7 @@
 /* Heading styles */
 h1, h2, h3, h4, h5, h6 {
     font-weight: typography.$font-bold;
-    color: variables.$blue-iris;
+    color: variables.$iris;
 }
 
 h1 {
@@ -35,7 +35,7 @@ h6 {
 
 /* Paragraph styles */
 p {
-    color: variables.$black-charcoal;
+    color: variables.$charcoal;
     margin: 20px 0;
     font-weight: typography.$font-normal;
 }
@@ -63,7 +63,7 @@ p {
     background-color: variables.$primary;
     color: variables.$white;
 
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: variables.$primary-hover; 
     }
 }
@@ -72,7 +72,7 @@ p {
     background-color: variables.$secondary;
     color: variables.$white;
     
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: variables.$secondary-hover; 
     }
 }
@@ -81,7 +81,7 @@ p {
     background-color: variables.$success;
     color: variables.$white;
     
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: variables.$success-hover; 
     }
 }
@@ -90,7 +90,7 @@ p {
     background-color: variables.$danger;
     color: variables.$white;
     
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: variables.$danger-hover; 
     }
 }
@@ -99,7 +99,7 @@ p {
     background-color: variables.$warning;
     color: variables.$white;
     
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: variables.$warning-hover; 
     }
 }
@@ -108,8 +108,22 @@ p {
     background-color: variables.$info;
     color: variables.$white;
     
-    &:hover {
+    &:hover:not(:disabled) {
         background-color: variables.$info-hover; 
+    }
+}
+
+/* Link styles */
+a {
+    color: variables.$primary;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: typography.$font-normal;
+    text-decoration: underline;
+    margin: variables.$btn-margin;
+        
+    &:hover:not(:disabled) {
+        color: variables.$link-hover; 
     }
 }
 

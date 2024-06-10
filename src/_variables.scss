@@ -1,19 +1,19 @@
 // Colors
-$blue-iris: #5D3FD3;
-$black-charcoal: #36454F;
+$iris: #5D3FD3;
 $white: #FFFFFF;
-$primary: #1F51FF;
-$primary-hover: #0818A8;
-$secondary: #818589;
-$secondary-hover: #36454F;
-$success: #228B22;
-$success-hover: #355E3B;
-$danger: #D70040;
-$danger-hover: #800000;
-$warning: #FFAA33;
-$warning-hover: #8B8000;
-$info: #40B5AD;
-$info-hover: #008080;
+$neon-blue: #1F51FF;
+$zaffre: #0818A8;
+$gunmetal-gray: #818589;
+$charcoal: #36454F;
+$forest-green: #228B22;
+$hunter-green: #355E3B;
+$carmine: #D70040;
+$maroon: #800000;
+$yellow-orange: #FFAA33;
+$dark-yellow: #8B8000;
+$verdigris: #40B5AD;
+$teal: #008080;
+$neon-pink: #FF10F0;
 
 // Margins
 $margin-auto: auto;
@@ -28,3 +28,20 @@ $line-height-2: 2;
 $btn-margin:  0.25rem;
 $btn-padding: 0.4rem 0.8rem;
 $btn-border-radius: 5px;
+
+// Link
+$link-hover: $neon-pink;
+
+// Theme Colors
+$primary: $neon-blue;
+$primary-hover: $zaffre;
+$secondary: $gunmetal-gray;
+$secondary-hover: $charcoal;
+$success: $forest-green;
+$success-hover: $hunter-green;
+$danger: $carmine;
+$danger-hover: $maroon;
+$warning: $yellow-orange;
+$warning-hover: $dark-yellow;
+$info: $verdigris;
+$info-hover: $teal;
