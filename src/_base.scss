@@ -3,37 +3,6 @@
 @use '_variables';
 @use '_typography';
 
-
-// Heading styles
-h1, h2, h3, h4, h5, h6 {
-    font-weight: typography.$font-bold;
-    color: variables.$iris;
-}
-
-h1 {
-   font-size: typography.$font-h1;
-}
-
-h2 {
-    font-size: typography.$font-h2;
-}
-
-h3 {
-    font-size: typography.$font-h3;
-}
-
-h4 {
-    font-size: typography.$font-h4;
-}
-
-h5 {
-    font-size: typography.$font-h5;
-}
-
-h6 {
-    font-size: typography.$font-h6;
-}
-
 // Paragraph styles
 p {
     color: variables.$charcoal;

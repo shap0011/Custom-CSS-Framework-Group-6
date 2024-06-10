@@ -25,3 +25,40 @@ $font-2x: 2rem;
 $font-3x: 3rem;
 $font-4x: 4rem;
 $font-5x: 5rem;
+
+// Headings
+h1 {
+    font-size: $font-3x;
+    font-weight: $font-extrabold;
+    margin-bottom: $font-md;
+}
+
+h2 {
+    font-size: $font-2x;
+    font-weight: $font-bold;
+    margin-bottom: $font-md;
+}
+
+h3 {
+    font-size: $font-xl;
+    font-weight: $font-semibold;
+    margin-bottom: $font-md;
+}
+
+h4 {
+    font-size: $font-lg;
+    font-weight: $font-semibold;
+    margin-bottom: $font-md;
+}
+
+h5 {
+    font-size: $font-md;
+    font-weight: $font-semibold;
+    margin-bottom: $font-md;
+}
+
+h6 {
+    font-size: $font-sm;
+    font-weight: $font-medium;
+    margin-bottom: $font-md;
+}
