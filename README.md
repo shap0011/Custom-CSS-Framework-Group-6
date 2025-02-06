@@ -10,3 +10,5 @@ Baseline CSS is crafted for students who prioritize speed and simplicity in web 
 Download [Baseline CSS](./css/baseline.css) and use in your HTML file.
 Example of how to link: `<link rel="stylesheet" href="css/baseline.css">`
 
+[To see completed project click the link to GitHub Page](https://shap0011.github.io/Custom-CSS-Framework-Group-6/)
+
